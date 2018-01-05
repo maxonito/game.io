@@ -1362,7 +1362,9 @@ footer .info .foot-item{font-size:10px;margin-right:5px;padding:0 5px;}
 }
 @media only screen and (max-width:480px){.top-image{margin-top:0;}
 .about-text{font-size:14px;}
-.top-image .note-wrap iframe{height:170px;}
+.top-image .note-wrap{background-image: none; border-radius: 10px;
+margin: 10px; background-color: rgba(131, 131, 132,0.8);;bottom: 0;}
+.top-image .note-wrap iframe{width: 90%;margin: 5%;}
 .share-wrap .game-subscribe p{font-size:14px;}
 }
 @media only screen and (max-width:320px){/**/}
