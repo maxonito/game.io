@@ -2898,7 +2898,9 @@ ul, li {
 
 input:focus {
   outline: none; }
-
+.container {
+  position: relative;
+}
 .visible-sm {
   display: none; }
 
@@ -2914,7 +2916,7 @@ input:focus {
 
 .cd-container {
   position: relative; }
-  .cd-container:before {
+  /*.cd-container:before {
     content: '';
     top: 0;
     right: -100px;
@@ -2922,7 +2924,7 @@ input:focus {
     width: 40px;
     height: 112px;
     background-image: url("../img/line-1.png");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; }*/
 
 .upper {
   text-transform: uppercase; }
@@ -2949,6 +2951,7 @@ input:focus {
   font-style: italic; }
 
 .s-bold {
+  font-size: 20px;
   font-weight: 600; }
 
 .flow-bold {
@@ -2991,7 +2994,10 @@ input:focus {
   position: relative;
   background-image: url("../img/bg-head.jpg");
   background-position: center center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+   background-size: cover; }
+
 
 .s-second {
   margin-top: 120px;
@@ -3054,6 +3060,12 @@ input:focus {
 
 .s-six {
   padding-top: 80px; }
+  .s-six .cloud-simple{
+    top: -2%;
+  }
+  .s-six .cloud-simple p{
+    font-size: 18px;
+  }
   .s-six h2 {
     display: block;
     max-width: 800px;
@@ -3072,13 +3084,20 @@ input:focus {
 .s-eight {
   background-color: #fafafa;
   padding: 55px 0; }
+  .s-eight .cloud-simple{
+    top: -3%;
+    padding-top: 45px;
+     }
+     .s-eight .cloud-simple p {
+      font-size: 20px;
+     }
   .s-eight h3 {
     text-transform: uppercase;
     color: #ef891a;
     font-size: 30px;
     font-family: 'flow-bold', sans-serif;
     text-align: center;
-    margin-top: 0; }
+    margin: 45px; }
 
 .s-nine {
   padding: 55px 0;
@@ -3092,9 +3111,16 @@ input:focus {
     font-size: 30px; }
 
 .s-ten {
+  background: #fff url(../img/iz-chego-bg.jpg) center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
   position: relative;
   z-index: 2;
   padding: 55px 0 120px 0; }
+  .s-ten .cloud-simple {
+    left: 70%;
+    padding-top: 30px;
+  }
   .s-ten h3 {
     text-align: center;
     text-transform: uppercase;
@@ -3105,6 +3131,10 @@ input:focus {
 .s-eleven {
   background-color: #ffffff;
   padding: 75px 0; }
+  .s-eleven .cloud-simple {
+    left: 80%;
+    padding-top: 40px;
+  }
   .s-eleven h3 {
     font-family: 'flow-bold', sans-serif;
     text-transform: uppercase;
@@ -3115,19 +3145,21 @@ input:focus {
 .s-twelve {
   position: relative;
   padding: 75px 20px 55px;
-  background-image: url("../img/bg-timer.jpg"); }
+  background: #fff url(../img/30min-bg.jpg) center no-repeat;
+  -webkit-background-size: cover;
+   background-size: cover; }
   .s-twelve .bg-timer {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #2b71da;
     opacity: 0.9; }
   .s-twelve .go-btn {
     position: relative; }
 
 .s-social {
+
   margin: 40px 0; }
   .s-social .soc-wrap {
     width: 50%; }
@@ -3176,7 +3208,7 @@ input:focus {
   .top-image .note-wrap {
     text-align: center;
     bottom: -70px;
-    max-width: 1000px;
+    width: 1000px;
     background-image: url("../img/notebook.png");
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%; 
@@ -3192,18 +3224,22 @@ input:focus {
     .top-image .note-wrap .hero {
       position: absolute; }
     .top-image .note-wrap .cat {
-      right: -70px;
+      right: 0;
       bottom: 35px;
-      width: 27%; }
+      width: 24%; }
+      .top-image .note-wrap .tree {
+      left: 0;
+      bottom: 35px;
+      width: 30%; }
       .top-image .note-wrap .word-2 {
         position: absolute;
-        right: 0;
-        top: -15%;
+        right: 0px;
+        top: -20%;
       }
       .top-image .note-wrap .word {
         position: absolute;
         right: 60px;
-        top: 15%;
+        top: 10%;
         width: 150px;
       }
 
@@ -3221,11 +3257,13 @@ input:focus {
     max-width: 41%; }
   .about-vinnie .text-part {
     line-height: 1.8;
+    font-size: 18px;
     margin-bottom: 25px; }
 .about-vinnie .zayec {
   max-width: 600px;
   max-height: 500px; 
   position: relative;
+  top: -100px;
 
 }
 .vinnie-questions {
@@ -3251,6 +3289,10 @@ input:focus {
   left: 0;
   top: 24px;
   line-height: 1.35; }
+  .cloud-padding {
+    padding-top: 50px;
+    font-size: 18px;
+  }
   .cloud-simple p {
     -webkit-transform: rotate(-7deg);
         -ms-transform: rotate(-7deg);
@@ -3318,9 +3360,18 @@ input:focus {
     font-size: 24px; }
 
 .how-possible {
+  position: relative;
   font-family: 'flow-bold', sans-serif;
   max-width: 1170px;
   margin: 50px auto; }
+  .how-possible .cloud-simple {
+    left: 70%;
+    padding-top: 30px;
+  }
+  .how-possible .cloud-simple p{
+    font-size: 18px;
+
+  }
   .how-possible h3 {
     text-transform: uppercase;
     font-family: 'flow-bold', sans-serif;
@@ -3865,27 +3916,27 @@ img.cvir-img {
       position: absolute;
       display: block; }
       .online-description .sert-1 {
-        top: 0;
-        right: 0;
-        width: 250px;
-        height: auto; }
+        top: -50px;
+        right: -70px;
+        width: 330px; }
       .online-description .sert-2 {
-        top: 0;
-        width: 150px;
-        right: 275px; }
+        top: -40px;
+        width: 160px;
+        right: 265px;
+        transform: rotate(30deg); }
       .online-description .sert-4 {
-        top: 230px;
-        width: 170px;
-        right: 0; }
+        top: 190px;
+        z-index: 100;
+        width: 200px;
+        right: -60px; }
       .online-description .sert-5 {
-        top: 230px;
-        right: 170px;
-        width: 250px;
-        height: auto; }
+        top: 200px;
+        right: 50px;
+        width: 330px; }
       .online-description .sert-6 {
-        top: 450px;
-        right: 0;
-        width: 250px;
+        top: 420px;
+        right: -60px;
+        width: 330px;
         height: auto; }
     .online-description__text {
       padding-left: 70px; }
@@ -4060,7 +4111,6 @@ img.cvir-img {
     text-align: center;
     color: white; }
 }
-
 
 
 .form-nopop {
@@ -5002,6 +5052,7 @@ p.thank-you span {
   .about-vinnie .zayec {
     max-width: 90%; }
   .about-vinnie .vinnie-text {
+
     max-width: 90%; }
   .about-vinnie .text-part {
     font-size: 14px; }
